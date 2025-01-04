@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="imgs/logo.png" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Enter the city name"
+          class="city main-reset"
+          name="city"
+          id="city"
+          autofocus
+        />
+        <button type="button" class="search-btn main-reset">
+          <img src="imgs/search.png" alt="Search" />
+        </button>
+      </div>
+      <div class="error">
+        <p class="error-message"></p>
+      </div>
+      <div class="weather">
+        <img src="imgs/rain.png" alt="Rain" class="weather-icon" />
+        <h1 class="temperature">22°C</h1>
+        <h2>
+          <span class="city-name">Santiago</span>
+          <span class="country">, CL</span>
+        </h2>
+        <span class="description"></span>
+
+        <div class="details">
+          <div class="col">
+            <img src="imgs/flood.png" alt="Humidity" />
+            <div>
+              <p class="humidity">45%</p>
+              <p class="label">Humidity</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <img src="imgs/wind-energy.png" alt="Wind" />
+            <div>
+              <p class="wind">45 km/h</p>
+              <p class="label">Wind speed</p>
+            </div>
+          </div>
+        </div>
+        <div class="copy">
+          <p>Copyright 2024 &copy; AmikelMAXI. All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+    <script lang="javascript" src="js/index.js"></script>
+  </body>
+</html>
